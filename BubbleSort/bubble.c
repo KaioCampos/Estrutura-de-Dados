@@ -1,5 +1,5 @@
 /*
-	Name: BubbleSort.cpp
+	Name: BubbleSort.c
 	Author: kaio campos
 	Date: 24/03/26 11:02
 	Description: Programa para demonstrar o funcionamento do metodo de ordenaçao chamado de Bubble sort
