@@ -1,5 +1,5 @@
 /*
-	Name: insertionSort.cpp
+	Name: insertionSort.c
 	Author: kaio campos
 	Date: 31/03/26 11:52
 	Description:programa para demontrar a implemetaçao do metodo de organizaçao insetionSort
