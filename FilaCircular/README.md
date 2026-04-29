@@ -1,14 +1,29 @@
-# 🔄 Fila Circular (FIFO)
+# 🔄 Estrutura de Dados: Fila Circular (FIFO)
 
-Esta implementação utiliza um vetor estático para simular uma fila circular, otimizando o uso de memória.
+Esta é uma implementação de uma **Fila Circular** utilizando um vetor estático em C. O projeto demonstra como gerenciar dados de forma eficiente seguindo a lógica **FIFO**, otimizando o uso do espaço no array.
 
-## 🧠 Conceitos Aplicados
-- **FIFO (First-In, First-Out):** O primeiro elemento a entrar é o primeiro a ser removido.
-- **Aritmética Modular:** Uso do operador `%` para fazer os ponteiros `inicio` e `fim` retornarem ao começo do vetor quando atingem o limite, evitando o desperdício de espaços vazios.
+## 🧠 O que é FIFO?
+**FIFO** significa *First-In, First-Out* (O primeiro a entrar é o primeiro a sair). É a estrutura ideal para sistemas de escalonamento, buffers de impressão e processamento de tarefas em ordem de chegada.
+
+## 🚀 O Diferencial da Fila Circular
+Em uma fila linear simples, quando removemos elementos do início, aquele espaço no vetor fica "morto". Na **Fila Circular**, utilizamos a **Aritmética Modular** para que, ao chegar no fim do vetor, os ponteiros retornem ao início se houver espaço livre.
+
+### Lógica de Movimentação:
+- **Inserção:** `fim = (fim + 1) % tam;`
+- **Remoção:** `inicio = (inicio + 1) % tam;`
 
 
 
 ## 🛠️ Funções Implementadas
-- `Enqueue`: Insere no fim.
-- `Dequeue`: Remove do início.
-- `isFull` / `isEmpty`: Verificam o estado da estrutura.
+* **Enqueue (Inserir):** Adiciona um elemento na posição `fim`.
+* **Dequeue (Remover):** Retira o elemento da posição `inicio`.
+* **isFull:** Verifica se a próxima posição do `fim` alcançaria o `inicio`.
+* **isEmpty:** Verifica se a fila está em seu estado inicial (`-1`).
+* **imprimirFila:** Percorre a estrutura respeitando a circularidade para exibir o conteúdo atual.
+
+## 📊 Detalhes Técnicos
+- **Cálculo de Tamanho:** Uso de `sizeof(vet)/sizeof(int)` para automação do limite da estrutura.
+- **Gerenciamento de Índices:** Controle rigoroso dos ponteiros `inicio` e `fim`.
+
+---
+*Projeto desenvolvido para a disciplina de Estrutura de Dados - FATEC.*
