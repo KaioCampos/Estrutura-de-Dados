@@ -1,5 +1,5 @@
 /*
-	Name: selectionSort.cpp
+	Name: selectionSort.c
 	Author: kaio campos
 	Date: 31/03/26 10:51
 	Description: Programa para implementar o metodo de ordenaçao Selection Sort
